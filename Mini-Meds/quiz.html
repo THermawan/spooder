@@ -1,0 +1,55 @@
+ <!--onload="checkLoggedIn()"-->
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Quizzes</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body onload="checkLoggedIn();">
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a class="active" href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a id="login" href="login.html">Login</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/DanboWait.jpg" alt="Danbo is okay." /> 
+		<h1>Quizzes</h1>
+		<p>Want to see how much you know about Strokes and Integrative Medicine? Try these quizes! If you are logged in, you can see your quiz results on your profile page! Keep in mind that your profile will show your most recent quiz result, not your highest.</p>
+		<br>
+		<button class="quizButton" type="quiz1" name="quiz1" id="quiz1" onclick="quiz1()">Quiz 1</button>
+		<button class="quizButton2" type="quiz2" name="quiz2" id="quiz2" onclick="quiz2()">Quiz 2</button>
+		<button class="quizButton2" type="quiz3" name="quiz3" id="quiz3" onclick="quiz3()">Quiz 3</button>
+		<br>
+		<p>Want to test to see how healthy you are? Try this quiz! Make sure you answer honestly, and don't worry about your score, it won't appear on your profile. But if you think it's too low, there are some great healthy snack options <a href="parents.html">here</a> for you to make with mum or dad! Eating healthy is a tasty and fun way of staying healthy.<p>
+		<button type="quiz4" name="quiz4" id="quiz4" onclick="quiz4()">Quiz 4</button>
+		</section>
+	</body>
+</html>

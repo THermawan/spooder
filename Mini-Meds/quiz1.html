@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Quiz 1</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js"></script>
+		<script src="jquery.js"></script>
+		<script src="quiz1.js"></script>
+	</head>
+
+	<body onload="checkLoggedIn();">
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a class = "active" href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a id="login" href="login.html">Login</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/DanboWait.jpg" alt="Danbo is okay." /> 
+		<h1>Quiz 1</h1>
+		<form id="quiz1" method="GET">
+		<label for="question1"><b>In what part of the body does a stroke occur?</b><br>
+		<input type="radio" name="question1" value="false" checked> Heart<br>
+		<input type="radio" name="question1" value="false"> Lungs<br>
+		<input type="radio" name="question1" value="true"> Brain<br>
+		<input type="radio" name="question1" value="false"> Kidneys<br>
+		</label>
+		<br>
+		<label for="question2"><b>What should you do if you think someone is having a stroke?</b><br>
+		<input type="radio" name="question2" value="false" checked> Tell them to lie down and take a nap<br>
+		<input type="radio" name="question2" value="false"> Call the family doctor to make an appointment<br>
+		<input type="radio" name="question2" value="true"> Call 0-0-0<br>
+		<input type="radio" name="question2" value="false"> Tell them to drink lots of water<br>
+		</label>
+		<br>
+		<label for="question3"><b>Which of the following are signs of a stroke?</b><br>
+		<input type="radio" name="question3" value="false" checked> Back pain<br>
+		<input type="radio" name="question3" value="false"> Loss of appetite<br>
+		<input type="radio" name="question3" value="false"> Running out of breath after running<br>
+		<input type="radio" name="question3" value="true"> One side of the face may droop<br>
+		</label>
+		<br>
+		<label for="question4"><b>Which of these things should you NOT do everyday to prevent stroke?</b><br>
+		<input type="radio" name="question4" value="false" checked> Walk your dog<br>
+		<input type="radio" name="question4" value="true"> Eat fatty fast food<br>
+		<input type="radio" name="question4" value="false"> Sleep at least 8 hours a day<br>
+		<input type="radio" name="question4" value="false"> Maintain a healthy lifestyle<br>
+		</label>
+		<br>
+		<button type="submit" name="submitMe" id="submitMe">Submit</button>
+
+		<br>
+		<br>
+		</form>
+		</section>
+	</body>
+</html>

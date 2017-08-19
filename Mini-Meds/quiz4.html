@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Quiz 4</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js"></script>
+		<script src="jquery.js"></script>
+		<script src="quiz4.js"></script>
+	</head>
+
+	<body onload="checkLoggedIn();">
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a class = "active" href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a id="login" href="login.html">Login</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/fitDanbo.png" alt="Danbo is okay." /> 
+		<h1>Quiz 4</h1>
+		<form id="quiz4" method="GET">
+		<label for="question1"><b>How many serves of fruit do you usually eat in a day, including fresh, canned and dried fruit?</b><br>
+		<input type="radio" name="question1" value=0 checked> None<br>
+		<input type="radio" name="question1" value=1> One<br>
+		<input type="radio" name="question1" value=2> Two or more<br>
+		</label>
+		<br>
+		<label for="question2"><b>How many serves of salad and vegetables do you usually eat in a day, including raw and cooked vegetables?</b><br>
+		<input type="radio" name="question2" value=0 checked> None<br>
+		<input type="radio" name="question2" value=1> Between one and three<br>
+		<input type="radio" name="question2" value=2> Four or more<br>
+		</label>
+		<br>
+		<label for="question3"><b>How many snack foods - such as chips, chocolate or cake - do you usually eat in a day?</b><br>
+		<input type="radio" name="question3" value=0 checked> Three or more a day<br>
+		<input type="radio" name="question3" value=1> One or two a day<br>
+		<input type="radio" name="question3" value=2> None<br>
+		</label>
+		<br>
+		<label for="question4"><b>How many sugary drinks do you usually drink in a day, including cordial, fizzy drinks and fruit juice?</b><br>
+		<input type="radio" name="question4" value=0 checked> Two or more a day<br>
+		<input type="radio" name="question4" value=1> One to two a day<br>
+		<input type="radio" name="question4" value=2> None<br>
+		</label>
+		<br>
+		<label for="question5"><b>How much moderate (breathing quicker than normal) or vigorous (huffing and puffing) exercise do you usually do in a day?</b><br>
+		<input type="radio" name="question5" value=0 checked> 0 - 30 minutes<br>
+		<input type="radio" name="question5" value=1> 30 - 60 minutes<br>
+		<input type="radio" name="question5" value=2> 60 minutes or more<br>
+		</label>
+		<br>
+		<label for="question6"><b>How often do you walk, cycle, skateboard or ride a scooter to school?</b><br>
+		<input type="radio" name="question6" value=0 checked> Never<br>
+		<input type="radio" name="question6" value=1> Sometimes<br>
+		<input type="radio" name="question6" value=2> Most Days<br>
+		</label>
+		<br>
+		<label for="question7"><b>How often do you spend time doing active things with your family (like playing at home, walking the dog, cycling or swimming)?</b><br>
+		<input type="radio" name="question7" value=0 checked> Never<br>
+		<input type="radio" name="question7" value=1> Once or twice a week or less<br>
+		<input type="radio" name="question7" value=2> More than twice a week<br>
+		</label>
+		<br>
+		<label for="question8"><b>How much time do you usually spend watching TV, playing computer games, reading or doing homework?</b><br>
+		<input type="radio" name="question8" value=0 checked> More than two hours a day<br>
+		<input type="radio" name="question8" value=1> Between one and two hours a day<br>
+		<input type="radio" name="question8" value=2> No more than one hour a day<br>
+		</label>
+		<br>
+		<button type="submit" name="submitMe" id="submitMe">Submit</button>
+		</form>
+		</section>
+	</body>
+</html>

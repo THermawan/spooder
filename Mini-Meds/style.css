@@ -1,0 +1,246 @@
+/*Fonts used: Tw Cen MT, Corbel, Baskerville Old Face*/
+
+html, body {
+	width: 1200px;
+	margin: 0 auto;
+	background-image: url("../images/congruent_pentagon.png"); /*Source: subtlepatterns.com*/
+}
+
+.banner {
+	display: block;
+	margin: 0px auto;
+}
+
+hr {
+	margin-right: 20px;
+	margin-bottom: 0;
+}
+
+.nav {
+	text-align: center;
+}
+
+.nav ul {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FFFAE3;	/*This is a very light, faded gold. Pastelly; almost like parchment.*/
+}
+
+.nav ul li {
+	float: left;
+	margin: 0 auto;
+}
+
+.nav li a {
+	display: block;
+	color: #260F0B;		/*Very dark brown. Almost black. Text default.*/
+	text-align: center;
+	padding: 12px 40px;
+	text-decoration: none;
+	font-family: "Tw Cen MT";
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;		/*Fancy fading effects for the nav bar.*/
+}
+
+.active, .nav li a:hover {
+	background-color: #4D7AC4;	/*That's the cool blue colour that appears on active links and when you hover over the nav bar!*/
+	color: white;
+}
+
+.dropdown-read, .dropdown-about {
+	display: none;
+	position: absolute;
+}
+
+.dropread:hover .dropdown-read,
+.dropabout:hover .dropdown-about {
+	display: block;
+	background-color: #FFFAE3;
+}
+
+.boxContainer {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+	margin: 0px auto;
+	height: 600px;
+	width: 1000px;
+}
+
+#brain1 {
+	object-fit: cover;
+	width: 320px;
+	height: 525px;
+	border: 10px solid #FFFAE3;
+	margin: 0px 10px 0px 0px;
+}
+
+#brain2, #brain3 {
+	object-fit: cover;
+	width: 320px;
+	height: 250px;
+	border: 10px solid #FFFAE3;
+	margin: 10px 10px 0px 0px;
+}
+
+.box4 {
+	margin: 10px auto;
+	width: 320px;
+	height: 505px;
+	background-color: #FFFAE3;
+	padding: 20px;
+}
+
+h1 {
+	font-family: "Baskerville Old Face";
+	font-size: 45px;
+	text-align: center;
+	padding: 40px 10px;
+}
+
+p, form {
+	text-align: justify;
+	padding: 0px 20px;
+	font-family: "Corbel";
+	font-size: 17px;
+	color: #260F0B;
+}
+
+p b {
+	font-weight: bold;
+}
+
+p i {
+	font-style: italic;
+}
+
+#h1Example {
+	font-family: "Baskerville Old Face";
+}
+
+#h2Example, #h3Example {
+	font-family: "Tw Cen MT";
+}
+
+#blue {
+	color: #4D7AC4;
+}
+
+.wordboard {
+	background-color: #FFFAE3;
+	width: 1065px;
+	height: auto;
+	min-height: 600px;
+	margin: 0px auto 20px auto;
+	padding-bottom: 30px;
+	color: #260F0B;
+}
+
+.wordboard p, form {
+	padding: 15px 30px 0px 37%;
+}
+
+.wordboard .firstUnderH2 {
+	padding: 7px 30px 0px 37%;
+}
+
+.wordboard .clearOfImage {
+	padding: 7px 30px 0px 30px;
+}
+
+.wordboard ul {
+	padding: 15px 30px 0px 10%;
+	font-family: "Corbel";
+}
+
+#siteMap {					/*First tier of pages.*/
+	padding: 15px 30px 0px 40%;
+	font-family: "Baskerville Old Face";
+}
+
+#siteMap .siteMap2 {					/*For the second tier of pages.*/
+	padding: 5px 30px 0px 5%;
+	font-family: "Baskerville Old Face";
+}
+
+.wordboard h1 {
+	font-size: 30px;
+	padding: 20px;
+	background-color: #4D7AC4;
+	color: white;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.wordboard h2 {
+	font-size: 22px;
+	padding: 10px 10px 0px 37%;
+	font-family: "Tw Cen MT";
+	color: #260F0B;
+}
+
+.wordboard h3 {
+	font-size: 20px;
+	padding: 10px 10px 0px 37%;
+	font-family: "Tw Cen MT";
+	color: #260F0B;
+}
+
+.firstPicWB {
+	object-fit: cover;
+	width: 350px;
+	height: 500px;
+	margin: 10px;
+	border: 5px solid #000;
+	float: left;
+}
+
+#lobeYou{
+	object-fit: cover;
+	width: 350px;
+	margin: 10px 30px 10px 15px;
+	border: 5px solid #000;
+	float: right;
+}
+
+a {
+	text-decoration: none;
+	color: #CCA96C;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+a:hover {
+	color: #F5D3AB;
+}
+
+textarea {
+	padding: 10px;
+	margin: 10px 20px 0px 20px;
+}
+
+form textarea {
+	padding: 5px;
+	margin: 2px 0px;
+}
+
+#firstSvg {
+	margin-left: 3%;
+}
+
+svg {
+	margin-top: 5px;
+}
+
+/* This is all for the game */
+canvas { background: #eee; display: block; margin: 0 auto; }

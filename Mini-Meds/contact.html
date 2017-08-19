@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Contact Us</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body onload="checkLoggedIn();">
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a class="active" href="contact.html">Contact Us</a>
+						<a href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a id="login" href="login.html">Login</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/DanboComp.jpg" alt="Ran out of cute vectors, using Danbo now." /> 
+		<h1>Contact Us</h1>
+		<p>Don't feel like having to open up your email to contact us? Never fear, we have a feedback form!</p>
+
+		<form id="feedbackForm" action="MAILTO:pher9239@uni.sydney.edu.au" method="post" enctype="text/plain"> <!--Sends whatever to Ty's email. Currently it only opens outlook, though. Will come up with something more sophisticated later, but for now, this'll do.-->
+
+		Name:<br>
+		<input type="text" name="name"><br><br>
+
+		E-mail:<br>
+		<input type="email" name="mail"><br><br>
+
+		Comment/feedback/seriously anything:<br>
+		<textarea rows="5" cols="50" name="comment" form="feedbackForm" placeholder="Enter text here..."></textarea><br><br>
+		<input class="totallyAButton" type="submit" value="Send">
+		<input class="totallyAButton" type="reset" value="Reset">
+		</form></section>
+	</body>
+</html>

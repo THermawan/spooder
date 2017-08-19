@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Style Guide</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js"></script>
+	</head>
+
+	<body onload="checkLoggedIn();">
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a href="contact.html">Contact Us</a>
+						<a class="active" href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a id = "login" href="login.html">Login</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/Paintbo.jpg" alt="Danbo can paint, too!." /> 
+		<h1>Style Guide</h1>
+		<h2>Typography</h2>
+		<p class="firstUnderH2">The font to be used for h1 headers is <font face="Baskerville Old Face">Baskerville Old Face</font> of size 45. This is often coloured white and accompanied by a <span id="blue">blue (#4D7AC4)</span> banner across the very top of a page's <a>.wordboard</a> section surrounded by solid black 2px top and bottom borders.</p>
+		<p >The font to be used for h2 and h3 headers is <font face="Tw Cen MT">Tw Cen MT</font>, of sizes 22 and 20 respectively. These are used for section and subsection headings; they break up the page, and retain the default text colour, (#260F0B).</p>
+		<p >The font to be used for general text is <font face="Corbel">Corbel</font> of size 17, and the font to be used for fancy profile titles is <font face="Baskerville Old Face">Baskerville Old Face,</font> size 30px, colour <span id="blue">blue (#4D7AC4)</span>.</p><br>
+
+		<h2>Navigation & Layout</h2>
+		<p class="firstUnderH2">There is always a banner across the very top of the page that features the site banner, featuring the MiniMeds logo. Clicking on it will always lead back to the index page, as per convention.</p>
+		<p >The contents of the page always appear in a <a>.wordboard</a> section, a block centred on the page at 1650px width and a flexible height (that retains a minimum of 600px). Most also feature an image cropped to 350x500px with a solid black 5px border and margins 10, 30, 10, 15 from the top, right, bottom, and left respectively.</p>
+		<p >The navigation bar is displayed horizontally accross the top of the page, under the banner. Active pages are highlighted in <span id="blue">blue (#4D7AC4)</span>, and all links, when hovered over, display a .5s fading colour transition from the default background colour (very faded, pastel gold) to the same sort of blue. The text also changes colour to white when hovered over! Some buttons also display additional dropdown menus leading to relevant links under appropriate categories that exhibit many similar functions and behaviours to the nav bar elements when hovered over.</p>
+
+		<h2 class="clearOfImage">Colour Palette (Base)</h2>
+		<svg id="firstSvg" height="46" width="46">
+			<circle cx="23" cy="23" r="20" stroke="black" stroke-width="3" fill=#FFE577 />
+		</svg>
+		<svg height="46" width="46">
+			<circle cx="23" cy="23" r="20" stroke="black" stroke-width="3" fill=#F5D3AB />
+		</svg>
+		<svg height="46" width="46">
+			<circle cx="23" cy="23" r="20" stroke="black" stroke-width="3" fill=#FFFAE3 />
+		</svg>
+		<svg height="46" width="46">
+			<circle cx="23" cy="23" r="20" stroke="black" stroke-width="3" fill=white />
+		</svg>
+		<svg height="46" width="46">
+			<circle cx="23" cy="23" r="20" stroke="black" stroke-width="3" fill=#2E4975 />
+		</svg>
+		<svg height="46" width="46">
+			<circle cx="23" cy="23" r="20" stroke="black" stroke-width="3" fill=#4D7AC4 />
+		</svg>
+		<svg height="46" width="46">
+			<circle cx="23" cy="23" r="20" stroke="black" stroke-width="3" fill=#ADCEFA />
+		</svg>
+		<svg height="46" width="46">
+			<circle cx="23" cy="23" r="20" stroke="black" stroke-width="3" fill=#D0FDFB />
+		</svg><br><br>
+
+		<h2 class="clearOfImage">Other Colour Features</h2>
+		<p class="clearOfImage"><a>Anchors</a> can be distinguished by their creamy colouration (#CCA96C), which fades to a brighter hue (#F5D3AB) over .5s when hovered over.</p><br>
+
+		<h2 class="clearOfImage">Flexboxes</h2>
+		<p class="clearOfImage">Flexboxes are featured on the home page to make it look nice and pretty - they're the objects that hold the cute images and the one 'Stroke, IM, and You' passage in the index, and their structural features are what allow for easy manipulation of those boxes. For this index specifically, I've created a container of width 1000px and height 600px, and four boxes sorted into rows (not columns). The way that the flexboxes flow and wrap (flex-flow: row wrap) make it such that the smaller, middle two boxes are placed comfortably in that center section on top of one another so that they'd use up space more economically.</p><br>
+
+		<h2 class="clearOfImage">Forms</h2>
+		<p class="clearOfImage">These are formatted the same way that the 'p' tag is, and so follows all the normal rules of typography. For the most part, forms on this website tend to stick to default fonts and colourations. Many of the buttons on the forms are also aesthetically similar to the navbar buttons, but with different colorations. The base colours, this time around, are <span id="blue">blue (#4D7AC4)</span> and white (#FFFFFF for text), and the .5s fade transitions to a <span id="darkerBlue">darker blue (#2E4975)</span> and gold (#FFE577). Buttons use the font family "Corbel", size 16px, have all inside text centred and are padded 5px by 10px (vertical and horizontal, respectively).</p><br>
+		<button id="exampleButton">This button does nothing. It's an example!</button></section>
+	</body>
+</html>

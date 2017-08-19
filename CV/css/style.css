@@ -1,0 +1,158 @@
+html, body {
+	width: 1200px;
+	margin: 0 auto;
+	background-image: url("../images/symphony.png"); /*Source: subtlepatterns.com*/
+}
+
+@font-face {
+	font-family: 'Palatino Linotype';
+	src: url('../fonts/Palatino Linotype.ttf');
+}
+
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('../fonts/Century Gothic.ttf');
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: italic;
+}
+
+.gold {
+	border-color: #D98324;
+	margin: 5px 15px;
+}
+
+hr {
+	border-color: #854635;
+}
+
+h1 {
+	font-family: 'Century Gothic';
+	font-size: 45px;
+	text-align: center;
+	padding: 40px 10px 10px;
+}
+
+h2 {
+	font-family: 'Century Gothic';
+	font-size: 19pt;
+	font-weight: bold;
+	padding: 0px 0px 7px;
+	color: #440C00;
+	transition: .5s;
+}
+
+#title {
+	font-family: 'Century Gothic';
+	font-size: 19pt;
+	font-weight: bold;
+	padding: 5px 0px 7px;
+	color: #440C00;
+	transition: .5s;
+}
+
+h2:hover, #title:hover {
+	color: #D96324;
+	cursor: default;
+}
+
+.inner {
+	margin: 25px auto;
+	width: 650px;
+	padding: 10px 20px 10px 30px;
+}
+
+.outer {
+	width: 1000px;
+	height: 650px;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0px auto;
+	background-color: #E8AC7F;
+}
+
+.buttons {
+	background-color: #251605;
+	width: 300px;
+	height: 650px;
+	font-family: 'Century Gothic';
+	font-size: 11pt;
+}
+
+.button, a {
+	color: #D98324;
+	padding: 30px 20px;
+	text-align: center;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.active {
+	background-color: #3A1A00;
+	color: #D98324;
+	padding: 30px 20px;
+	text-align: center;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.button:hover, .active:hover {
+	background-color: #352615;
+}
+
+.button span, .active span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after, .active span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span, .active:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after, .active:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.sub {
+	font-family: 'Palatino Linotype';
+	text-align: center;
+	font-size: 11pt;
+	font-weight: bold;
+	padding: 0px 0px 20px;
+}
+
+.list {
+	margin-left: 5px;
+	font-size: 15px;
+	font-family: 'Palatino Linotype';
+}
+
+.loc {
+	font-size: 11pt;
+	font-weight: bold;
+	font-family: 'Century Gothic';
+	padding-bottom: 5px;
+	padding-left: 3px;
+	color: #251605;
+}
+
+svg {
+	padding: 5px 0px 0px;
+}

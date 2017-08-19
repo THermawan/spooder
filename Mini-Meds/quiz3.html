@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Quiz 3</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js"></script>
+		<script src="jquery.js"></script>
+		<script src="quiz3.js"></script>
+	</head>
+
+	<body onload="checkLoggedIn();">
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a class = "active" href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a id="login" href="login.html">Login</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/docDanbo.png" alt="Danbo is okay." /> 
+		<h1>Quiz 3</h1>
+		<form id="quiz3" method="GET">
+		<label for="question1"><b>Which one of these is considered Western Medicine?</b><br>
+		<input type="radio" name="question1" value="true" checked> Asprin for a headache<br>
+		<input type="radio" name="question1" value="false"> Yoga<br>
+		<input type="radio" name="question1" value="false"> Healthy Food<br>
+		<input type="radio" name="question1" value="false"> Acupuncture<br>
+		</label>
+		<br>
+		<label for="question2"><b>Alternative medicine and complementary medicine mean the same thing.</b><br>
+		<input type="radio" name="question2" value="false" checked> True<br>
+		<input type="radio" name="question2" value="true"> False<br>
+		</label>
+		<br>
+		<label for="question3"><b>"Integrative medicine" refers to:</b><br>
+		<input type="radio" name="question3" value="false" checked> Taking medicine without a doctor's permission<br>
+		<input type="radio" name="question3" value="false"> Whole-body treatment without symptoms-based care<br>
+		<input type="radio" name="question3" value="true"> Combining complementary and alternative therapies with conventional medicine<br>
+		<input type="radio" name="question3" value="false"> All of the above<br>
+		</label>
+		<br>
+		<label for="question4"><b>Diet and exercise are the basics of good health.</b><br>
+		<input type="radio" name="question4" value="false" checked> True<br>
+		<input type="radio" name="question4" value="true"> False<br>
+		</label>
+		<br>
+		<label for="question5"><b>A CT (or CAT) Scan is:</b><br>
+		<input type="radio" name="question5" value="false" checked> Taking a cat and scanning it using the printer<br>
+		<input type="radio" name="question5" value="true"> A kind of x-ray which gives a doctor a clearer picture of what is happening inside the body<br>
+		<input type="radio" name="question5" value="false"> Cats<br>
+		<input type="radio" name="question5" value="false"> None of the above<br>
+		</label>
+		<br>
+		<label for="question6"><b>Speech therepists can't help a stroke patient because they will never speak again.</b><br>
+		<input type="radio" name="question6" value="false" checked> True<br>
+		<input type="radio" name="question6" value="true"> False<br>
+		</label>
+		<br>
+		<label for="question7"><b>Which type of therepy uses special needles put into points on the body to help with balance?</b><br>
+		<input type="radio" name="question7" value="false" checked> Homeopathy<br>
+		<input type="radio" name="question7" value="true"> Chiropractic<br>
+		<input type="radio" name="question7" value="false"> Acupuncture<br>
+		<input type="radio" name="question7" value="false"> Naturopathy<br>
+		</label>
+		<br>
+		<label for="question8"><b>Types of alternative medical systems are:</b><br>
+		<input type="radio" name="question8" value="true" checked> Complementary and integrative<br>
+		<input type="radio" name="question8" value="false"> Allopathy and complementary<br>
+		<input type="radio" name="question8" value="false"> Homeopathy and naturopathy<br>
+		<input type="radio" name="question8" value="false"> Homeopathy and allopathy<br>
+		</label>
+		<br>
+		<label for="question9"><b>Haemorrhagic stroke happens when:</b><br>
+		<input type="radio" name="question9" value="false" checked> Blood vessels leading to the brain become blocked<br>
+		<input type="radio" name="question9" value="true"> Brain cells are destroyed because of thin blood vessels bursting<br>
+		<input type="radio" name="question9" value="false"> Blood going through the veins too fast<br>
+		<input type="radio" name="question9" value="false"> The veins become too tight for blood to pass through<br>
+		</label>
+		<br>
+		<label for="question10"><b>If someone is experiencing a stomach ache, does this mean they will have a stroke?</b><br>
+		<input type="radio" name="question10" value="false" checked> Yes<br>
+		<input type="radio" name="question10" value="true"> No<br>
+		</label>
+		<br>
+		<button type="submit" name="submitMe" id="submitMe">Submit</button>
+		</form>
+		</section>
+	</body>
+</html>

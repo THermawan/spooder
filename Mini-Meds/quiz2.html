@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Quiz 2</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js"></script>
+		<script src="jquery.js"></script>
+		<script src="quiz2.js"></script>
+	</head>
+
+	<body onload="checkLoggedIn();">
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a class = "active" href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a id="login" href="login.html">Login</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/DanboWait.jpg" alt="Danbo is okay." /> 
+		<h1>Quiz 2</h1>
+		<form id="quiz2" method="GET">
+		<label for="question1"><b>A stroke occurs when a blood vessel in the brain is blocked, leaks or bursts.</b><br>
+		<input type="radio" name="question1" value="true" checked> True<br>
+		<input type="radio" name="question1" value="false"> False<br>
+		</label>
+		<br>
+		<label for="question2"><b>What is the biggest risk factor for stroke?</b><br>
+		<input type="radio" name="question2" value="false" checked> Obesity<br>
+		<input type="radio" name="question2" value="false"> Diabetes<br>
+		<input type="radio" name="question2" value="true"> High blood pressure<br>
+		</label>
+		<br>
+		<label for="question3"><b>You can have a stroke without knowing it.</b><br>
+		<input type="radio" name="question3" value="true" checked> True<br>
+		<input type="radio" name="question3" value="false"> False<br>
+		</label>
+		<br>
+		<label for="question4"><b>Which of these is NOT a sign of stroke?</b><br>
+		<input type="radio" name="question4" value="false" checked> Slurred speech<br>
+		<input type="radio" name="question4" value="true"> Chest pain<br>
+		<input type="radio" name="question4" value="false"> trouble moving<br>
+		</label>
+		<br>
+		<label for="question5"><b>A stroke is not necessarily an emergency.</b><br>
+		<input type="radio" name="question5" value="false" checked> True<br>
+		<input type="radio" name="question5" value="true"> False<br>
+		</label>
+		<br>
+		<label for="question6"><b>To lower your chances of having a stroke, you should:</b><br>
+		<input type="radio" name="question6" value="true" checked> Not smoke<br>
+		<input type="radio" name="question6" value="false"> Avoid physical activity<br>
+		<input type="radio" name="question6" value="false"> Both<br>
+		</label>
+		<br>
+		<label for="question7"><b>The most common treatment for stroke is:</b><br>
+		<input type="radio" name="question7" value="false" checked> Shock therepy<br>
+		<input type="radio" name="question7" value="false"> Aerobic exercise<br>
+		<input type="radio" name="question7" value="false"> Potassium<br>
+		<input type="radio" name="question7" value="true"> Blood thinners<br>
+		</label>
+		<br>
+		<label for="question8"><b>What does the acronym "F.A.S.T" stand for?</b><br>
+		<input type="radio" name="question8" value="false" checked> Food, Age, Sleep, Tallness<br>
+		<input type="radio" name="question8" value="false"> Face, Arms, Silence, Tremors<br>
+		<input type="radio" name="question8" value="false"> Fall, Act, Stop, Think<br>
+		<input type="radio" name="question8" value="true"> Face, Arms, Speech, Time<br>
+		</label>
+		<br>
+		<label for="question9"><b>By knowing stroke signs and symptoms, you can help SAVE A LIFE!</b><br>
+		<input type="radio" name="question9" value="true" checked> True<br>
+		<input type="radio" name="question9" value="false"> False<br>
+		</label>
+		<br>
+		<button type="submit" name="submitMe" id="submitMe">Submit</button>
+		</form>
+		</section>
+	</body>
+</html>

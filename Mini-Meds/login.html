@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Login</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="jquery.js"></script>
+		<script src="login.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a class="active" href="login.html">Login</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/DanboComp.jpg" alt="Ran out of cute vectors, using Danbo now." /> 
+		<h1>Login</h1>
+		<form id="loginForm" method="GET">
+		<label class="loginText" for="username">Username:</label>
+		<input class="textInputLogin" type="text" name="username" id="username" />
+		<br>
+		<br>
+		<label class="loginText" for="password">Password:</label>
+		<input class="textInputLogin" type="password" name="password" id="password" />
+		<br>
+		<br>
+		<button type="submit" name="submitMe" id="submitMe">Submit</button>
+		</form><br>
+		<p class="centred"><i>Don't have <s>a secret identity</s> an account?</i></p><br>
+		<button id="registerButton" type="register" name="register" id="register" onclick="register()">Register now!</button>
+		</section>
+	</body>
+</html>

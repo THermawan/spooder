@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MiniMeds - Edit Profile</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="jquery.js"></script>
+		<script src="edit.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body onload = "editProfile();">
+		<header><a href="index.html"><img class="banner" src="images/banner.png" alt="MiniMeds!" /></a></header>
+		<br>
+
+		<header class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class = "dropread"><a href="readme.html">Read Me!</a>
+					<div class="dropdown-read">
+						<a href="stroke.html">Stroke</a>
+						<a href="im.html">Integrative Medicine</a>
+						<a href="glossary.html">Glossary</a>
+					</div></li>
+				<li><a href="quiz.html">Quizzes</a></li>
+				<li><a href="game.html">Play!</a></li>
+				<li class="droprents"><a href="parents.html">For Parents</a>
+					<div class="dropdown-rents">
+						<a href="privacyPolicy.html">Privacy Policy</a>
+						<a href="recipes.html">Recipes</a>
+					</div></li>
+				<li class="dropabout"><a href="about.html">About</a>
+					<div class="dropdown-about">
+						<a href="faq.html">FAQ</a>
+						<a href="contact.html">Contact Us</a>
+						<a href="styleGuide.html">Style Guide</a>
+					</div></li>
+				<li><a class="active" href="profile.html">Profile</a></li>
+				<li><a href="siteMap.html">Site Map</a></li>
+			</ul>
+		</header>
+
+		<br>
+		<section class="wordboard"><img class="firstPicWB" src="images/DanboComp.jpg" alt="Ran out of cute vectors, using Danbo now." /> 
+		<h1>Choose Avatar</h1>
+		<form id="editForm" method="GET">
+		<label for="avatar">Avatar
+		<br>
+		<input type="radio" name="avatar" id="Cat" value="Cat">
+		<img src="icons/Cat.png" alt="Cat">
+		<input type="radio" name="avatar" id="Cheetah" value="Cheetah">
+		<img src="icons/Cheetah.png" alt="Cheetah">
+		<input type="radio" name="avatar" id="Chicken" value="Chicken">
+		<img src="icons/Chicken.png" alt="Chicken">
+		<input type="radio" name="avatar" id="Cow" value="Cow">
+		<img src="icons/Cow.png" alt="Cow">
+		<br>
+		<input type="radio" name="avatar" id="Dog" value="Dog">
+		<img src="icons/Dog.png" alt="Dog">
+		<input type="radio" name="avatar" id="Elephant" value="Elephant">
+		<img src="icons/Elephant.png" alt="Elephant">
+		<input type="radio" name="avatar" id="Fox" value="Fox">
+		<img src="icons/Fox.png" alt="Fox">
+		<input type="radio" name="avatar" id="Lion" value="Lion">
+		<img src="icons/Lion.png" alt="Lion">
+		<br>
+		<input type="radio" name="avatar" id="Lioness" value="Lioness">
+		<img src="icons/Lioness.png" alt="Lioness">
+		<input type="radio" name="avatar" id="Monkey" value="Monkey">
+		<img src="icons/Monkey.png" alt="Monkey">
+		<input type="radio" name="avatar" id="Owl" value="Owl">
+		<img src="icons/Owl.png" alt="Owl">
+		<input type="radio" name="avatar" id="Panda" value="Panda">
+		<img src="icons/Panda.png" alt="Panda">
+		<br>
+		<input type="radio" name="avatar" id="Penguin" value="Penguin">
+		<img src="icons/Penguin.png" alt="Penguin">
+		<input type="radio" name="avatar" id="Pig" value="Pig">
+		<img src="icons/Pig.png" alt="Pig">
+		<input type="radio" name="avatar" id="Sheep" value="Sheep">
+		<img src="icons/Sheep.png" alt="Sheep">
+		<input type="radio" name="avatar" id="Tiger" value="Tiger">
+		<img src="icons/Tiger.png" alt="Tiger">
+		</label>
+		<br>
+		<button type="submit" name="submitMe" id="submitMe">Save</button>
+
+		<br>
+		<br>
+		</form>
+		</section>
+	</body>
+</html>
